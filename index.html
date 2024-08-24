@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="./img/favicon2.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body onload="init()">
+    <div class="background">
+        <img class="background_image" src="./img/pokeball-white.png" alt="">
+        <div class="headline_section_container">
+            <div onclick="emptyInputfield()" class="headline_section">
+                <img class="logo" src="./img/Favicon.png" alt="">
+                <h1>Pokédex</h1>
+            </div>
+            <input class="input" type="text" placeholder="Find Pokémon" id="search" onchange="searchFunction()">
+        </div>
+        <div class="pokemon_overview_container">
+        <div id="pokemon-overview" class="pokemon_overview"></div>
+        </div>
+        <div id="pokemon-card" class="pokemon_card_hidden"></div>
+        </div>
+        <div class="show_more" id="show-more">
+            <img onclick="showMore()" class="logo" src="./img/Favicon.png" alt="">
+            <h2 onclick="showMore()" class="show_more_text">Show more</h2>
+        </div>
+    </div>
+</body>
+</html>
